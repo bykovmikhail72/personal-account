@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+}
+
+.button {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  background-color: #758fea;
+  width: fit-content;
+  height: 32px;
+  color: #ffffff;
+  border-radius: 8px;
+
+  &:hover {
+    color: #fff !important;
+    transform: scale(1.03);
+  }
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.disabled {
+  opacity: 0.6;
+}

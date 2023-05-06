@@ -1,0 +1,66 @@
+.auth {
+  width: 100%;
+  height: 100vh;
+  padding: 177px 0 0 122px;
+  background-color: #ebefff;
+  position: relative;
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .authContainer {
+    height: 370px;
+    width: 367px;
+    position: relative;
+    z-index: 100;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .label {
+      font-size: 16px;
+    }
+
+    .input {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+  }
+
+  .button {
+    background-color: #659ed3;
+    width: 100%;
+    margin-top: 42px;
+    color: #bccfff;
+    border-radius: 50px;
+  }
+
+  .info {
+    margin-top: 67px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin: 22px auto 0;
+
+    & > svg {
+      cursor: pointer;
+    }
+  }
+}

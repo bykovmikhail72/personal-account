@@ -1,0 +1,47 @@
+.card {
+  width: 995px;
+  height: 367px;
+  padding: 27px;
+  display: flex;
+  gap: 56px;
+  box-shadow: 0px 3px 10px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+
+  .image {
+    width: 157px;
+    height: 148px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 518px;
+    height: 313px;
+
+    .input {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .properties {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      .group {
+        display: flex;
+
+        flex-wrap: wrap;
+        gap: 10px;
+
+        &Item {
+          background: #ffd7d7;
+          border-radius: 10px;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}

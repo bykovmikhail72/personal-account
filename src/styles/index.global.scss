@@ -1,0 +1,76 @@
+@import './normalize.css';
+@import './fonts/fonts.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Inter', 'Roboto', sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+article {
+  font-family: 'Inter', 'Roboto', sans-serif !important;
+}
+
+button {
+  padding: 0;
+
+  color: inherit;
+  font-family: 'Inter', 'Roboto', sans-serif !important;
+
+  cursor: pointer;
+
+  border-width: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Inter', 'Roboto', sans-serif;
+
+  border: 0;
+  border: none;
+  outline: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
