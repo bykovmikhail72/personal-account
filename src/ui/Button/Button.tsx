@@ -4,6 +4,7 @@ import { ReactNode } from 'react'
 import cn from 'classnames'
 
 import styles from './styles.module.scss'
+import { SizeType } from 'antd/es/config-provider/SizeContext'
 
 type TPosition = 'left' | 'center' | 'right'
 
@@ -14,6 +15,7 @@ interface IButtonProps {
   disabled?: boolean
   rightIcon?: ReactNode
   leftIcon?: ReactNode
+  size?: SizeType
   onClick?: () => void
 }
 
@@ -25,6 +27,7 @@ const Button = ({
   position = 'center',
   rightIcon,
   leftIcon,
+  size,
 }: IButtonProps) => {
   const classNames = cn(
     styles.wrapper,
@@ -35,6 +38,7 @@ const Button = ({
   return (
     <div className={classNames}>
       <ButtonAntd
+        size={size}
         disabled={disabled}
         onClick={onClick}
         className={cn(styles.button, className)}>

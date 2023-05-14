@@ -47,7 +47,7 @@ const content = (): SiderMenuItem[] => {
       },
       {
         title: 'Мои чемпионаты',
-        link: '/championships',
+        link: '/champion-ships',
         Icon: IconMyChampionShips,
       },
       {

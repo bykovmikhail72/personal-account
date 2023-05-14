@@ -49,6 +49,7 @@ const Modal = ({
   return (
     <ReactModal
       isOpen={open}
+      ariaHideApp={false}
       className={cn(styles.modal, className)}
       overlayClassName={styles.overlay}
       onRequestClose={onClose}

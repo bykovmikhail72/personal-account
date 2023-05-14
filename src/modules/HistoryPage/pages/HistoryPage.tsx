@@ -2,9 +2,8 @@ import { useState } from 'react'
 import Typography from '../../../ui/Typography'
 
 import styles from './styles.module.scss'
-import { Modal } from '../../../lib/components/Modal'
-import IconOk from '../../../ui/icons/IconOk'
 import PageWrapper from '../../../lib/components/PageWrapper'
+import ShowTeam from 'lib/components/ShowTeam/ShowTeam'
 
 const history = [
   {
@@ -157,30 +156,7 @@ const HistoryPage = () => {
           )
         })}
       </table>
-      <Modal
-        open={showModal}
-        onClose={handleClick}
-        title={`Команда: ${history[id as number]?.name}`}
-        titleSize={16}
-        content={
-          <table className={styles.modal}>
-            <tr>
-              <td><Typography color={'#656ED3'}>ФИО участников:</Typography></td>
-              <td><Typography color={'#656ED3'}>Капитан:</Typography></td>
-              <td><Typography color={'#656ED3'}>E-mail:</Typography></td>
-            </tr>
-            {history[id as number]?.members.map((item, i) => {
-              return (
-                <tr>
-                  <td className={styles.fullName}>{`${i + 1}. ${item.fullName}`}</td>
-                  <td>{item.isCaptain && <IconOk />}</td>
-                  <td>{item.email}</td>
-                </tr>
-              )
-            })}
-          </table>
-        }
-      />
+      <ShowTeam showModal={showModal} handleClick={handleClick} data={history} id={id} />
     </PageWrapper>
   )
 }
